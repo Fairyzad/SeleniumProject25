@@ -74,6 +74,9 @@ public class T5_Windows_Practice {
         driver.quit(); // close everything
         // driver.close(); // Only close for current one
 
+        //If we want to go back to main page, we can use already stored main handle
+        //driver.switchTo().window(mainHandle)
+
     }
 
 }
