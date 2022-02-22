@@ -60,12 +60,12 @@ public class T3_CRM_LOGIN {
         //2. Go to : https://login1.nextbasecrm.com/
         driver.get("https://login1.nextbasecrm.com/");
 
-        //Calling my utility method to login helpdesk1
+        //Calling my utility method to login helpdesk2
         CRM_Utilities.crm_login(driver);
 
         //6. Verify title is as expected:
         //Expected: Portal
-        BrowserUtils.verifyTitle(driver, "Portal");
+        BrowserUtils.verifyTitle(driver, "(2)Portal");
 
     }
 
