@@ -11,7 +11,7 @@ public class ConfigurationReader {
     // variable from outside of class Encapsulation
 
     static {//static block accept static only and out object is static,and
-        // when class is load it will run once and before everything else
+        // when class is load it will run first and before everything else
 
 
 
