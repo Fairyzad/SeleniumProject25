@@ -15,5 +15,18 @@ public class JavaFakerPractice {
 
     System.out.println("faker.name().fullName() = " + faker.name().fullName());
 
+    // numerify()method will generate random numbers in the format we want to get
+    System.out.println("faker.numerify(\"###-###-####\") = " + faker.numerify("###-###-####"));
+    System.out.println("faker.numerify(\"312-###-####\") = " + faker.numerify("312-###-####"));
+
+    //letterify()method will generate random letters where we pass"?";
+    System.out.println("faker.letterify(\"???-????\") = " + faker.letterify("????-???"));
+
+    System.out.println("faker.bothify(\"##?#-##?#-##?#-##??\") = " + faker.bothify("##?#-##?#-##?#-##??"));
+
+    System.out.println("faker.finance().creditCard() = " + faker.finance().creditCard().replaceAll("-",""));
+
+    System.out.println("faker.chuckNorris().fact() = " + faker.chuckNorris().fact().replaceAll("Chunk Norris","Muhtar"));
+
 }
 }
