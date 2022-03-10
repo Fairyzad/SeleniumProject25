@@ -50,6 +50,5 @@ public class T3_Actions_Hover {
         //a. “name: user3” is displayed
         Assert.assertTrue(user3.isDisplayed());
 
-        //BREAK UNTIL 3.13PM CST
     }
 }
