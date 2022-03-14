@@ -25,7 +25,7 @@ public class Driver {
      */
     public static WebDriver getDriver(){
 
-        if (driver == null){
+        if (driver == null){//keep driver alive but not active
 
             /*
             We read our browserType from configuration.properties.
@@ -57,5 +57,14 @@ public class Driver {
 
         return driver;
 
+    }
+   /*
+   This method will make sure our driver value is always null after using quit()method
+    */
+    public static void closeDriver(){
+        if(driver!=null){
+            driver.quit();// this line will terminate the existing session.value will not even be null
+            driver= null;
+        }
     }
 }
